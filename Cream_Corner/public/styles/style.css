@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+body{
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+header{
+  display: flex;
+  justify-content: center;
+}
+.headerTitle{
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+}
+nav ul{
+  display: flex;
+  justify-content: start;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+nav ul li{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;  
+  font-size: larger;
+  font-weight: bolder;
+}
+
+nav ul li a{
+  text-decoration: none;
+  padding: 20px;
+}
+.navPage:hover{
+  background-color: #320558;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #320558;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+table{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+table td{
+  padding: 20px;
+  border: 2px soild #702BAB;
+}
+table tr th{
+  border: 2px soild #117566;
+}
+th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: #F2F2CE ;
+}
+section{
+  padding: 100px;
+  border: 2px solid black;
+  margin-top: 10px;
+}
+footer{
+  display: flex;
+  margin-top: 120px;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid black;
+}

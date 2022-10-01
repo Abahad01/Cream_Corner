@@ -1,0 +1,48 @@
+<!-- Name : Abdul Ahad Saleem Shah   Email : ashah6644@conestogac.on.ca -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles/style.css">
+        <title>Cream Corner</title>
+    </head>
+    <body>
+        <header>
+            <img src="/images/ice_cream.jpeg" alt="" srcset="" height="150px" width="200px" style = "border-radius: 20px; margin: 10px;">
+            <!-- Jonathan Cooper (November 10th, 2021) : https://images.pexels.com/photos/10175400/pexels-photo-10175400.jpeg -->
+            <h1 class="headerTitle">Cream Corner</h1>
+        </header>
+        <nav>
+            <ul>
+                <li class="navPage"><a href="/dashboard">View Orders</a></li>
+                <li class="navPage"><a href="/form">Create Orders</a></li>
+                <li class="navPage"><a href="/login">Login</a></li>
+            </ul>
+        </nav>
+    <main>
+        <h1>Thank you for Your Order</h1>
+        <br>
+        <br>
+        <h3>Here are your order Details</h3>
+
+            <% if(data != ''){ %>
+            <div>
+                        <h4>Customer Name : <%=data?.name%></h4>
+                        <h4>Customer Number: <%= data?.customer_number %></h4>
+                        <h4>Total Choclate Blizzards: <%= data?.chocoloate_blizzards %></h4>
+                        <h4>Total Strawberry Sundaes: <%= data?.strawberry_sundaes %></h4>
+                        <h4>Blueberry Shakes: <%= data?.blueberry_shakes %></h4>
+                        <h4>Sub Total : $<%= data?.sub_total %></h4>
+                        <h4>Tax: $<%= data?.tax %></h4>
+                        <h4>Total Cost: $<%= data?.total_cost %></h4>
+            </div>
+            <% }else{ %>
+                <h1>No Requests in the Database</h1>
+                <% } %>
+    </main>
+    
+   
+    <footer>
+        <h1>&copy;Copyright Abdul Ahad Saleem Shah</h1>
+    </footer>
+</body>
+</html>
